@@ -1,0 +1,279 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.nav-button{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    transition: 1s;
+}
+.nav-button:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: 1s;
+    padding: 2px;
+}
+
+.nav-image{
+
+    height: 50px;
+    width: 150px;
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(239, 0, 239);
+}
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.home-container{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 15, 15);
+}
+form{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.carta-container{
+display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 600px;
+    border: 2px solid black;
+    background-image: url(./pexels-eberhard-grossgasteiger-2098428.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid white;
+    
+}
+
+.carta-image{
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+    box-shadow: 2px 2px;
+    background-color:  rgb(239, 0, 239);
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.carta{
+    border: 2px solid black;
+    width: 210px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(151, 18, 151);
+    box-shadow: 5px 5px 5px white;
+}
+
+.carta-title{
+    border: 1px solid white;
+    background-color: black;
+    margin-top: 5px;
+    border-radius: 2px;
+    color: white;
+    padding: 2px;
+}
+.carta-text{
+    border: 2px solid white;
+    color: white;
+    width: 180px;
+    background-color: black;
+    padding: 3px;
+    border-radius: 4px;
+
+}
+
+.carta-button{
+    text-decoration: none;
+    background-color: rgb(215, 59, 12);
+    border: 2px solid white;
+    color: white;
+    margin-top: -7px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.carta-button:hover{
+    text-decoration: none;
+    background-color: rgb(235, 58, 5);
+    border: 2px solid white;
+    color: white;
+    margin-top: -7px;
+    margin-bottom: 3px;
+    padding: 6px;
+    box-shadow: 2px 2px white;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.form-container{
+    background-color: rgb(16, 15, 15);
+    padding: 10px;
+    margin: 0;
+}
+header{
+    background-color: black;
+}
+.form-input{
+    border: 2px solid white;
+    background-color: rgb(239, 0, 239);
+    border-radius: 7px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.table-container{
+    background-color: white;
+}
+.form-input:hover{
+    border: 2px solid white;
+    background-color: rgb(239, 0, 239);
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px white;
+    transition: 1s;
+
+
+}
+#buscar-button{
+    background-color: rgb(215, 59, 12);
+    border: 3px solid white;
+    border-radius: 4px;
+    margin-left: 3px;
+
+}
+
+footer{
+    background-color: rgb(239, 0, 239);
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.footer-logo-container{
+    height: 75px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    
+
+}
+.footer-logo-red{
+    background-color: rgb(239, 0, 239);
+    border: 2px solid white;
+    border-radius: 100%;
+    
+}
+.footer-logo-red:hover{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px  white;
+    
+}
+.table--container{
+    background-color: white;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: 2px solid white;
+}
+.form-label{
+    color: white;
+}
+
+.cohort{
+    background-color: black;
+    border: 2px solid white;
+    margin-right: 15px;
+    display: flex;
+    padding: 5px;
+}
+.cohort:hover{
+    background-color: white;
+    border: 2px solid black;
+    margin-right: 15px;
+    display: flex;
+    padding: 5px;
+
+}
+
+h5{ 
+    color: white;
+}
+
+h5:hover{ 
+    color: rgb(239, 0, 239);
+}
+
+
+@media only screen and (max-width: 768px){
+.carta-container{
+    display: flex;
+    flex-direction: column;
+    height: 1920px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    
+}
+.form-input{
+    width: 15%;
+    margin: 2px;
+}
+#form-input{
+    width: auto;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+}
+    
+
