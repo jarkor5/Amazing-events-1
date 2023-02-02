@@ -38,7 +38,7 @@ nav{
     margin-right: 10px;
 }
 
-.home-container{
+#home-container{
     height: 250px;
     display: flex;
     justify-content: center;
@@ -53,12 +53,13 @@ form{
 }
 
 
-.carta-container{
+#carta-container{
 display: flex;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    height: 600px;
+    height: 1350px;
     border: 2px solid black;
     background-image: url(./pexels-eberhard-grossgasteiger-2098428.jpg);
     background-repeat: no-repeat;
@@ -67,6 +68,20 @@ display: flex;
     
 }
 
+.carta-container{
+    display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 650px;
+        border: 2px solid black;
+        background-image: url(./pexels-eberhard-grossgasteiger-2098428.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+        
+    }
 .carta-image{
     height: 180px;
     width: 180px;
@@ -85,6 +100,9 @@ display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    max-height: 400px;
+    min-height: 400px;
+    margin: 15px;
     background-color: rgb(151, 18, 151);
     box-shadow: 5px 5px 5px white;
 }
@@ -96,6 +114,18 @@ display: flex;
     border-radius: 2px;
     color: white;
     padding: 2px;
+   
+}
+
+.carta-title-m{
+    border: 1px solid white;
+    background-color: black;
+    margin-top: 5px;
+    border-radius: 2px;
+    color: white;
+    padding: 2px;
+    width: 120px;
+   
 }
 .carta-text{
     border: 2px solid white;
@@ -277,3 +307,44 @@ footer{
 }
     
 
+.carta-container{
+    display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 650px;
+        border: 2px solid black;
+        background-image: url(./pexels-eberhard-grossgasteiger-2098428.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+        
+    }
+
+
+    .carta-details{
+        border: 2px solid black;
+        width: 210px;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80%;
+        min-width: 80%;
+        margin: 15px;
+        background-color: rgb(151, 18, 151);
+        box-shadow: 5px 5px 5px white;
+    }
+
+    .details{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 20px;
+    }
+
+    
