@@ -1,11 +1,15 @@
+
 const params = new URLSearchParams(location.search)
 const id = params.get('id')
 let events = data.events
 const nombre = params.get('name')
 console.log(nombre)
 
-
-const container = document.getElementById('carta-details')
+fetch('https://mindhub-xj03.onrender.com/api/amazing')
+.then(response => response.json())
+.then( data => {
+  const events = data.events
+  const container = document.getElementById('carta-details')
 
 const event = events.find(event => event._id == id)
 
@@ -34,7 +38,7 @@ ${event.place}
     <h5 class="carta-text">
         Price
     </h5>
-    <p class="carta-text">${event.price}</p>
+    <p class="carta-text"> $ ${event.price}</p>
 </div>
 
 
@@ -46,3 +50,57 @@ ${event.place}
 
         </div>
 </div>`
+ 
+  
+
+
+})
+.catch(error => console.log(error))
+
+
+
+
+  
+
+  
+  
+
+
+
+ 
+
+
+  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

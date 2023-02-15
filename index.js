@@ -1,18 +1,70 @@
-let events = data.events
+import{crearcard, eventFilter, filterSearch} from "./function.js"
+ 
 let lista = document.getElementById("carta-container")
-//console.log(data.events[0].name)
+let search = document.getElementById('search')
+let checkboxFilter = document.querySelector('.form-container')
+//const datos = './amazing.json'
+fetch('https://mindhub-xj03.onrender.com/api/amazing')
+.then(response => response.json())
+.then( data => {
+  const events = data.events
+  
+ const categories = [ ...new Set(events.map( event => event.category))]
+ let checkboxContainer = ''
+ const checkfilter = document.getElementsByClassName('.checkboxfilter')
+  crearcard(events)
+  checkboxFilter.addEventListener('change', (e) =>{
+    let filter =   eventFilter(events)
+    let buscador = search[0].value.toLowerCase()
+    let buscarFunction = filterSearch(buscador, events)
+    let filtrados = eventFilter(buscarFunction)
+    console.log(e)
+    crearcard(filtrados) 
+  }
+  )
+  search.addEventListener('keyup', (e) =>{
+    let buscador = search[0].value.toLowerCase()
+    let buscarFunction = filterSearch(buscador, events)
+    let filtrados = eventFilter(buscarFunction)
+    console.log(e)
+    crearcard(filtrados) 
+  }
+    
+  
+  )
 
-for(let event of events ){
-    lista.innerHTML += ` <div class="carta">
-    <img src="${event.image}" class="carta-image">
-    <h5 class="carta-title">${event.name}</h5>
-    <p class="carta-text">${event.description}</p>
-    <a href="#" class="carta-button">View more</a>
+  for (let category of categories){
 
-</div>`
-    console.log(lista)
+    checkboxContainer += `<div class="form-input">
+    <input type="checkbox" value="${category}" name="${category}" id="filter" class="form-input"></input>
+    <label for="${category}">${category}</label>
+    </div>`
 
-}
+   
+ }
+
+ checkboxFilter.innerHTML += checkboxContainer
+  
+
+
+})
+.catch(error => console.log(error))
+
+
+
+
+  
+
+  
+  
+
+
+
+ 
+
+
+  
+
 
 
 
